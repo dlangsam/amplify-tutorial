@@ -1,0 +1,73 @@
+movies:
+  - name: 'Band Of Brothers'
+    year: 2001
+    classic: false
+    accuracy: 5
+    size: 35
+    description: 'band_of_brothers'
+    tagline: "Ordinary men. Extraordinary times."
+  - name: 'Lost Battalion'
+    year: 2001
+    classic: false
+    accuracy: 6
+    size: 16
+    description: 'lost_battalion'
+    tagline: "Caught between two lines of fire, the Germans gave them two options: surrender or die. They chose a third."
+  - name: 'Pearl Harbor'
+    year: 2001
+    classic: false
+    accuracy: 3
+    size: 9
+    description: 'pearl_harbor'
+    tagline: "December 7, 1941 - A day that shall live in infamy."
+  - name: 'Saving Private Ryan'
+    year: 1998
+    classic: false
+    accuracy: 4
+    size: 11
+    description: 'saving_private_ryan'
+    tagline: "The mission is a man."
+  - name: 'Windtalkers'
+    year: 2002
+    classic: false
+    accuracy: 2
+    size: 11
+    description: 'saving_private_ryan'
+    tagline: "The Navajo Has the Code. Protect the Code at All Costs."
+  - name: 'Patton'
+    year: 1970
+    classic: true
+    accuracy: 2
+    size: 2
+    description: 'patton'
+    tagline: ''
+  - name: 'The Desert Fox'
+    year: 1951
+    classic: true
+    accuracy: 10
+    size: 1
+    description: 'the_desert_fox'
+    tagline: ''
+  - name: 'The Longest Day'
+    year: 1962
+    classic: true
+    accuracy: 9
+    size: 200
+    description: 'the_longest_day'
+    tagline: ''
+  - name: 'To the Shores of Tripoli'
+    year: 1942
+    classic: true
+    accuracy: 1
+    size: 14
+    description: 'tripoli'
+    tagline: ''
+  - name: 'Tora! Tora! Tora!'
+    year: 1970
+    classic: true
+    accuracy: 8
+    size: 75
+    description: 'tora_tora_tora'
+    tagline: 'The incredible attack on Pearl Harbor as told from both the American and Japanese sides.'
+
+
