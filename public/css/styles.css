@@ -5381,6 +5381,7 @@ textarea.form-control-lg {
   margin: calc(var(--bs-modal-footer-gap) * 0.5);
 }
 
+
 @media (min-width: 576px) {
   .modal {
     --bs-modal-margin: 1.75rem;
@@ -11325,4 +11326,55 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.conclusion{
+  background-image: url("../assets/img/cemetery.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: scroll;
+  	background-position: center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+/* Modal Container */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed; /* Position modal relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the modal */
+  z-index: 1000; /* Ensure modal appears above other content */
+  background-color: white; /* Modal background color */
+  border: 1px solid #ccc; /* Modal border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  max-width: 80%; /* Adjust maximum width as needed */
+  max-height: 80%; /* Adjust maximum height as needed */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds modal height */
+}
+
+/* Overlay */
+.modal-overlay {
+  display: none; /* Hide overlay by default */
+  position: fixed; /* Position overlay relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999; /* Ensure overlay appears below the modal */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+}
+
+/* Show Modal and Overlay */
+.modal.show {
+  display: block; /* Display modal when 'show' class is present */
+}
+
+.modal-overlay.show {
+  display: block; /* Display overlay when 'show' class is present */
 }

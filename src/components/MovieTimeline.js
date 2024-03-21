@@ -1,24 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import yaml from 'js-yaml';
 
-function MovieTimeline() {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    async function fetchMovies() {
-      try {
-        const response = await fetch('../movies.yaml');
-        const text = await response.text();
-        const parsedData = yaml.load(text);
-        console.log(parsedData);
-        setMovies(parsedData.movies || []); // Initialize movies as an empty array if data is undefined
-      } catch (error) {
-        console.error('Error fetching movies:', error);
-      }
-    }
-
-    fetchMovies();
-  }, []);
+const MovieTimeline = ({ movies }) => {
 
   const categorizeMovies = (movies) => {
     const categories = {

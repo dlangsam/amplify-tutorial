@@ -17,8 +17,9 @@ const NavBar = () => {
     document.addEventListener('scroll', navbarShrink);
 
     // Smooth scrolling to section when clicking on nav links
+    console.log("HERE");
     const smoothScroll = (target) => {
-        document.querySelector(target).scrollIntoView({
+        document.querySelector(target)?.scrollIntoView({
             behavior: 'smooth'
         });
     };
@@ -43,6 +44,8 @@ const NavBar = () => {
             }
         });
     });
+
+   
 
     return () => {
         document.removeEventListener('scroll', navbarShrink);
@@ -80,8 +83,8 @@ const NavBar = () => {
                         <li><a className="dropdown-item" href="#conclusion">Conclusion</a></li>
                       </ul>
                   </li>
-                  <li className="nav-item"><a className="nav-link" href="#classics">The Classics</a></li>
                   <li className="nav-item"><a className="nav-link" href="#movies">The Movies</a></li>
+                  <li className="nav-item"><a className="nav-link" href="#classics">The Classics</a></li>
                   <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
               </ul>
           </div>
