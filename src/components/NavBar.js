@@ -1,8 +1,64 @@
+import React, { useEffect } from 'react';
+const NavBar = () => {
+  useEffect(() => {
+    const navbarShrink = () => {
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (!navbarCollapsible) {
+            return;
+        }
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink');
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink');
+        }
+    };
 
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JavaScript
+    // Shrink the navbar when page is scrolled
+    document.addEventListener('scroll', navbarShrink);
 
-function NavBar() {
+    // Smooth scrolling to section when clicking on nav links
+    const smoothScroll = (target) => {
+        document.querySelector(target).scrollIntoView({
+            behavior: 'smooth'
+        });
+    };
+
+    // Add click event listener to each nav link for smooth scrolling
+    const navLinks = document.querySelectorAll('#navbarResponsive .nav-link');
+    navLinks.forEach(navLink => {
+        navLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            const target = event.target.getAttribute('href');
+            smoothScroll(target);
+        });
+    });
+
+    // Collapse responsive navbar when nav item is clicked (for mobile)
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navItems = document.querySelectorAll('.navbar-nav .nav-item');
+    navItems.forEach(navItem => {
+        navItem.addEventListener('click', () => {
+            if (navbarToggler.classList.contains('show')) {
+                navbarToggler.click();
+            }
+        });
+    });
+
+    return () => {
+        document.removeEventListener('scroll', navbarShrink);
+        navLinks.forEach(navLink => {
+            navLink.removeEventListener('click', smoothScroll);
+        });
+        navItems.forEach(navItem => {
+            navItem.removeEventListener('click', () => {
+                if (navbarToggler.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
+        });
+    };
+}, []);
+  
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div className="container">

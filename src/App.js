@@ -2,17 +2,18 @@ import React from 'react';
 
 import NavBar from './components/NavBar'
 import Purpose from './components/Purpose'
+import Quote from './components/Quote'
 import MovieTimeline from './components/MovieTimeline'
-import MyComponent from './components/ScrollComponent'
+
 function App() {
   return (
     <div>  
-      <MyComponent />
+
       <NavBar />
       <header className="masthead">
         <div className="container">
-          <div className="masthead-subheading">Welcome To Our Studio!</div>
           <div className="masthead-heading text-uppercase">The World War Movies Studio</div>
+          <Quote/>
           <a className="btn btn-primary btn-xl text-uppercase" href="#purpose">Tell Me More</a>
         </div>
       </header>
