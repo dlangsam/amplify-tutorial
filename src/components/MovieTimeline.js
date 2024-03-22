@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const MovieTimeline = ({ movies }) => {
 
@@ -30,6 +30,14 @@ const MovieTimeline = ({ movies }) => {
 
   const sortedMovies = categorizeMovies(movies);
 
+  // Define categoryImages here
+  const categoryImages = {
+    veryAccurate: '../assets/img/the-longest-day.jpg',
+    accurate: '../assets/img/band-of-brothers.jpg',
+    modestAccuracy: '../assets/img/pearl-harbor.jpg',
+    pureFiction: '../assets/img/tripoli.jpg',
+  };
+
   return (
     <section id="content" className="bg-light-gray">
       <div className="container">
@@ -48,7 +56,9 @@ const MovieTimeline = ({ movies }) => {
             <ul className="timeline">
               {Object.entries(sortedMovies).map(([category, movies]) => (
                 <li key={category} className={category === 'pureFiction' ||  category === 'accurate'? 'timeline-inverted' : ''}>
-
+                  <div className="timeline-image">
+                    <img className="img-circle img-responsive" src={categoryImages[category]} alt={category} />
+                  </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
                       <h4>{category === 'veryAccurate' ? 'Very Accurate' : category === 'accurate' ? 'Accurate' : category === 'modestAccuracy' ? 'Modest Accuracy' : 'Pure Fiction'}</h4>

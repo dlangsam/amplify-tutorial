@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect} from 'react';
+import AWS from '../awsConfig'; 
+import ImageGallery from './ImageGallery'
 const Movies = ({ movies }) => {
     const [selectedMovie, setSelectedMovie] = useState(null);
     const [showModal, setShowModal] = useState(false);
+    const [description, setDescription] = useState('');
+
+    useEffect(() => {
+      if (selectedMovie) {
+          fetchDescription(selectedMovie.description);
+      }
+  }, [selectedMovie]);
+
     const openModal = movie => {
-      debugger;
         setSelectedMovie(movie);
         setShowModal(true);
     };
@@ -13,6 +21,28 @@ const Movies = ({ movies }) => {
         setSelectedMovie(null);
         setShowModal(false);
     };
+
+    const getImageUrl = (imageKey) => {
+      return `https://combat-aces.s3.amazonaws.com/${imageKey.key}`;
+    };
+
+    const fetchDescription = async descriptionKey => {
+      const s3 = new AWS.S3();
+      const params = {
+          Bucket: 'combat-aces',
+          Key: `descriptions/${descriptionKey}`
+      };
+
+      try {
+          const data = await s3.getObject(params).promise();
+          const paragraphs = data.Body.toString('utf-8').split('\n');
+          const formattedData = paragraphs.map(p => `<p>${p}</p>`).join('');
+          setDescription(formattedData);
+      } catch (error) {
+          console.error('Error fetching description from S3:', error);
+          setDescription('Description not available');
+      }
+  };
     // Filter movies into classic and non-classic categories
     const classics = movies.filter(movie => movie.classic);
     const nonClassics = movies.filter(movie => !movie.classic);
@@ -34,7 +64,7 @@ const Movies = ({ movies }) => {
                                         <i className="fa fa-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                {movie.main_image && <img src={movie.main_image.url} className="move-poster img-responsive" alt={movie.name} />}
+                                {movie.images && <img src={getImageUrl(movie.images[0])} className="img-responsive" alt={movie.name} />}
                             </a>
                             <div className="portfolio-caption">
                                 <h4>{movie.name}</h4>
@@ -60,7 +90,8 @@ const Movies = ({ movies }) => {
                                         <i className="fa fa-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                {movie.main_image && <img src={movie.main_image.url} className="move-poster img-responsive" alt={movie.name} />}
+                                
+                                {movie.images && <img src={getImageUrl(movie.images[0])} className="move-poster img-responsive" alt={movie.name} />}
                             </a>
                             <div className="portfolio-caption">
                                 <h4>{movie.name}</h4>
@@ -71,18 +102,14 @@ const Movies = ({ movies }) => {
                 </div>
             </div>
          {/* Modal */}
-{selectedMovie && (
+         {selectedMovie && (
     <div className={`portfolio-modal modal fade js-modal ${showModal ? 'show' : ''}`} id="portfolioModal1" tabIndex="-1" role="dialog" aria-hidden="true">
-        <div className="modal-dialog">
+        <div className="modal-dialog modal-fullscreen">
             <div className="modal-content">
-                <div className="close-modal" data-dismiss="modal" onClick={closeModal}>
-                    <div className="lr">
-                        <div className="rl"></div>
-                    </div>
-                </div>
-                <div className="container">
+                <button type="button" className="btn-close" aria-label="Close" onClick={closeModal}></button>
+                <div className="container-fluid">
                     <div className="row">
-                        <div className="col-lg-8 col-lg-offset-2 col-xs-12">
+                        <div>
                             <div className="modal-body">
                                 <div className="modal-title">
                                     <div className="col-md-10 col-xs-12 pull-right">
@@ -93,13 +120,10 @@ const Movies = ({ movies }) => {
                                     </div>
                                 </div>
                                 <p className="item-intro text-muted js-tagline">{selectedMovie.tagline}</p>
-                                <div className="js-description">
-                                    {selectedMovie.description}
-                                </div>
+                                <div className="js-description" dangerouslySetInnerHTML={{ __html: description }} />
                                 <div className="js-images">
-                                    {/* Render movie images here */}
+                                    <ImageGallery images={selectedMovie.images} movieName={selectedMovie.name} />
                                 </div>
-
                                 <button type="button" className="btn btn-primary close-btn" onClick={closeModal}>
                                     <i className="fa fa-times"></i> Close Movie
                                 </button>
@@ -111,6 +135,7 @@ const Movies = ({ movies }) => {
         </div>
     </div>
 )}
+
 
         </section>
     );

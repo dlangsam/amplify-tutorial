@@ -22,9 +22,9 @@ const Quote = () => {
 
     return (
         <div className="masthead-subheading">
-            {quote.text}
+            "{quote.text}"
             <br/>
-            --{quote.author}
+            - {quote.author}
         </div>
     );
 };
