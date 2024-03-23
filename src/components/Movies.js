@@ -124,10 +124,8 @@ const Movies = ({ movies }) => {
         </div>
     </div>
 )}
-
-
-        </section>
-    );
+</section>
+);
 };
 
 export default Movies;
