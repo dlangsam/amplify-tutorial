@@ -18,7 +18,7 @@ const ImageGallery = ({ images, movieName }) => {
     <div className="gallery">
       <div className="img-wrap main-img js-main-img">
         {/* Main image */}
-        <img className="selected-img" src={getImageUrl(mainImage)} alt="Main Image" />
+        <img className="selected-img" src={getImageUrl(mainImage)} alt={movieName} />
       </div>
       <div className="small-images">
         {/* Small images */}
