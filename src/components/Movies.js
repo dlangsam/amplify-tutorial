@@ -59,11 +59,6 @@ const Movies = ({ movies }) => {
                     {nonClassics.map(movie => (
                         <div key={movie.id} className="col-md-4 col-sm-6 portfolio-item">
                         <a href="#" className="portfolio-link js-show-movie"  onClick={e => { e.preventDefault(); openModal(movie); }}>
-                                <div className="portfolio-hover">
-                                    <div className="portfolio-hover-content">
-                                        <i className="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
                                 {movie.images && <img src={getImageUrl(movie.images[0])} className="img-responsive" alt={movie.name} />}
                             </a>
                             <div className="portfolio-caption">
@@ -85,12 +80,6 @@ const Movies = ({ movies }) => {
                     {classics.map(movie => (
                         <div key={movie.id} className="col-md-4 col-sm-6 portfolio-item">
                             <a href="#" className="portfolio-link js-show-movie"  onClick={e => { e.preventDefault(); openModal(movie); }}>
-                                <div className="portfolio-hover">
-                                    <div className="portfolio-hover-content">
-                                        <i className="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                
                                 {movie.images && <img src={getImageUrl(movie.images[0])} className="move-poster img-responsive" alt={movie.name} />}
                             </a>
                             <div className="portfolio-caption">
