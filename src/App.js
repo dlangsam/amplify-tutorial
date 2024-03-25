@@ -53,8 +53,7 @@ const App = () => {
               Content by Michael Kurey / Design by Devorah Langsam
             </div>
             <div className="col-lg-4 text-lg-end">
-              <a className="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-              <a className="link-dark text-decoration-none" href="#!">Terms of Use</a>
+              <a className="link-dark text-decoration-none me-3" href="#!">About this site</a>
             </div>
           </div>
         </div>

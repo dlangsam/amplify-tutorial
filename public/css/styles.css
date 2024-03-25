@@ -11461,3 +11461,24 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 75px;
 }
+
+.modal-title {
+  position: relative;
+}
+
+
+
+@media (min-width: 1200px) {
+  .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+  }
+}

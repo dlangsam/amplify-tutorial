@@ -101,10 +101,10 @@ const Movies = ({ movies }) => {
                         <div>
                             <div className="modal-body">
                                 <div className="modal-title">
-                                    <div className="col-md-10 col-xs-12 pull-right">
+                                    <div className="bottom-right">
                                         <h2 className="js-movie-name">{selectedMovie.name}</h2>
                                     </div>
-                                    <div className="col-md-2 col-xs-12 pull-left">
+                                    <div className="bottom-left">
                                         <h4 className="js-year">{selectedMovie.year}</h4>
                                     </div>
                                 </div>
