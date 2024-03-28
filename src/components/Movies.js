@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import AWS from '../awsConfig'; 
 import ImageGallery from './ImageGallery'
 const Movies = ({ movies }) => {
     const [selectedMovie, setSelectedMovie] = useState(null);
@@ -8,7 +7,7 @@ const Movies = ({ movies }) => {
 
     useEffect(() => {
       if (selectedMovie) {
-          fetchDescription(selectedMovie.description);
+          fetchDescription(selectedMovie);
       }
   }, [selectedMovie]);
 
@@ -26,16 +25,9 @@ const Movies = ({ movies }) => {
       return `https://combat-aces.s3.amazonaws.com/${imageKey.key}`;
     };
 
-    const fetchDescription = async descriptionKey => {
-      const s3 = new AWS.S3();
-      const params = {
-          Bucket: 'combat-aces',
-          Key: `descriptions/${descriptionKey}`
-      };
-
+    const fetchDescription = movie => {
       try {
-          const data = await s3.getObject(params).promise();
-          const paragraphs = data.Body.toString('utf-8').split('\n');
+          const paragraphs = movie.text.split('\n');
           const formattedData = paragraphs.map(p => `<p>${p}</p>`).join('');
           setDescription(formattedData);
       } catch (error) {

@@ -6,9 +6,21 @@ movies:
     size: 35
     description: 'band_of_brothers'
     tagline: "Ordinary men. Extraordinary times."
+    text: |
+      Not surprisingly, Band of Brothers was nominated for 19 Emmy Awards, and won six, including prizes for "Outstanding Mini-Series", "Outstanding Casting for a Mini-Series, Movie or a Special" and "Outstanding Directing for a Mini-Series, Movie or a Dramatic Special". The D-Day episode is quite different from previous movies about D-Day in that it doesn’t focus on the beach but rather the paratroopers that dropped in the night before.
+
+      "It is doubtful that any war movie on the large or small screen has captured the varied experiences of ordinary soldiers better than Band of Brothers." –Barry Garron
+
+      “A triumph on every conceivable level . . . a brilliant, engrossing, and captivating saga. This is the new benchmark that all war epics should be judged by.” – Brian Mckay
+
+      “Its aim is to shock us, horrify us, move us, and above all, tell us the story of "Easy" Company as honestly as possible.” – Brian Mckay
+
+      Each episode opens with interviews of actual men who served in Easy Company and they usually discuss what will be occurring in the upcoming episodes. One of the most touching openings occurs when one of the veterans says “My grandchild asked me if I was a hero the other day, and I responded ‘I served in a company of heroes.’” Opening each episode with these scenes allows the viewer to understand that what is being depicted actually happened.
+
+      Barry Garron argues “for the most part, every episode is a self-contained exploration of various themes, including leadership, reaction under fire and coping physically and mentally with unimaginable circumstances. On the one hand, the diffusion of each story among dozens of characters makes it harder to identify with any individual. On the other, the broader portrait of a company in transition gives an entirely new, fresh perspective to this war drama."
     images:
-    - key: 'bob3.jpg'
-    - key: 'bob1.jpg'
+      - key: 'bob3.jpg'
+      - key: 'bob1.jpg'
   - name: 'Lost Battalion'
     year: 2001
     classic: false
@@ -16,9 +28,17 @@ movies:
     size: 16
     description: 'lost_battalion'
     tagline: "Caught between two lines of fire, the Germans gave them two options: surrender or die. They chose a third."
+    text: |
+      The Lost Battalion stressed the individual aspect of war. Major Charles Whittlesey, who was declared as one of the three most important members of the American Expeditionary Force and a Medal of Honor recipient, was a school teacher before he was drafted to lead men into battle. Many of the men in Whittlessey’s battalion were shopkeepers, clerks, and construction workers whose lives were interrupted due to the outbreak of World War I. The ''Lost Battalion'' was not even a battalion but was two companies of about 500 men that were not even lost, but rather surrounded. During an offensive in the Argonne Forest this battalion was the only one that managed to advance. The Germans launched eight attacks against the unit over a five day span of time and the men ran out of food the first day. A&E depicts the movie with historical accuracy and like Saving Private Ryan, used hand-held cameras to capture battle scenes more vividly. The battles took place near the end of the war and at the end of the movie the General the arrived told Whittlesey that the losses the battalion suffered were “acceptable”. Whittlesey was so troubled after the war because of the experiences he went through that he committed suicide in March of 1921. The movie does a great job, sadly, of displaying how much the soldiers suffered and how hard it actually is to fight in thick forests.
+
+      Tom Miller, a critic writing for Military.com, puts forth that ''The script is compelling on several levels. Whittlesey, the bookish-looking New York lawyer turned soldier, is the Everyman Warrior that viewers enjoy identifying with. Most would like to think that placed in a similar situation they too would find the courage to act as Whittlesey did.''
+
+      When most average viewers finish watching the movie they leave with an impression in their minds of what World War I was like and what the soldiers had gone through. They do think that they would be able to accomplish what this ''battalion'' did if they were in the same position, when actually many would not be capable of doing so.
+
+      Miller also argues that the viewer is misinformed as they believe that they pulled off a vital mission in the war and that small groups of men could really change the course. Miller says that ''[The Lost Battalion] also leaves the impression that Schroder was commanding a single battalion rather than companies from two separate battalions. And, worst, the movie gives the siege an undeserved tactical significance in the larger battle for the Argonne Forest. What Whittlesey and his men did needs no embellishment.''
     images:
-    - key: 'lb1.jpg'
-    - key: 'lb2.jpg'
+      - key: 'lb1.jpg'
+      - key: 'lb2.jpg'
   - name: 'Pearl Harbor'
     year: 2001
     classic: false
@@ -26,10 +46,16 @@ movies:
     size: 9
     description: 'pearl_harbor'
     tagline: "December 7, 1941 - A day that shall live in infamy."
+    text: |
+      Pearl Harbor was released in the summer of 2001 and got a variety of reviews. Critic Roger Ebert summarized the movie as “a two-hour movie squeezed into three hours, about how on December 7, 1941, the Japanese staged a surprise attack on an American love triangle," adding that, "The filmmakers seem to have aimed the film at an audience that may not have heard of Pearl Harbor, or perhaps even of World War Two."
+
+      Mark Dujsik comically mocks the movie by saying “[Evelyn] is on a train with her fellow nurses, headed somewhere, and we are treated to a flashback of one of the most annoying meet-cutes in recent memory. Evelyn was doing eye tests for the pilots, and Rafe either can’t see, can’t read, or is just stupid. By the end of the movie, I still wasn’t sure of which it was. Evelyn let’s him pass, and one drug-overdose, concussion, and broken nose later, they go out on a date.” Tora! Tora! Tora! is mentioned quite often by movie critics when they are attacking Pearl Harbor. However, Tora! Tora! Tora!, was a flop at the box office and has only picked up some respect in recent years.
+
+      Rafe Mcawley and Danny Walker, played by Ben Affleck and Josh Hartnett, grow up as childhood friends who dream about being fighter pilots. By 1940 they are in the US Army’s Air Corps together. Rave goes off to Europe to fight for the British and is presumed dead after a few weeks of fighting. However, Rave comes back to Hawaii, much to the surprise of Danny and Evelyn, in time for the attacks on Pearl Harbor. Both put up impressive kills during the attacks and are asked by Colonel Doolittle if they want to participate on a daring attack that he cannot disclose until they have already set sail months later.
     images:
-    - key: 'ph1.jpg'
-    - key: 'ph2.jpg'
-    - key: 'ph3.jpg'
+      - key: 'ph1.jpg'
+      - key: 'ph2.jpg'
+      - key: 'ph3.jpg'
   - name: 'Saving Private Ryan'
     year: 1998
     classic: false
@@ -37,9 +63,15 @@ movies:
     size: 11
     description: 'saving_private_ryan'
     tagline: "The mission is a man."
+    text: |
+      Steven Spielberg said he wanted to show that “war is immediate; it’s chaotic, it’s abrupt, and it’s without mercy” in his movie Saving Private Ryan. Movie critic James Berardinelli describes the movie by saying “Spielberg spares the viewer nothing of the horrors of battle, using every tactic at his disposal to convey the chaos and senseless waste that lies at the core of any engagement.” Spielberg uses a unique way to capture battle scenes in the movie by using handheld cameras to film. Saving Private Ryan is a three-hour-long movie and the movie only has two major battle scenes. Berardinelli states that “In between, smaller fights alternate with quiet, character-building moments that flesh out the soldiers…ensures that everyone in the movie is developed into a multi-dimensional individual for whom we can grieve if and when they die. They are "citizen soldiers" -- ordinary men caught in the teeth of extraordinary circumstances.” What is unique about Saving Private Ryan was that the mission in the movie was to save one man, Ryan. The movie opens and closes with Ryan visiting Captain Miller’s grave with his family.
+
+      The films Saving Private Ryan shows the struggles of a small unit in a full scare war. The platoon of men in the film were assigned one mission which was to find and return Private Ryan back stateside. Like Windtalkers the leading character, Captain Miller, dies in the end and the character that was saved memorializes this leading character.
+
+      This movie is only loosely based on historic fact. Many proclaim that the opening 30-minute scene is one of the best in representing the invasion of Normandy. The recreation is very violent and focuses on Miller and him leading a group up the beach to take out some stationary machine guns overlooking the beach. In this opening sequence Spielberg said he was "trying to show something [other] war films hadn't dared to show". He wanted to show that "war is immediate; it's chaotic; it's abrupt, and it's without mercy".
     images:
-    - key: 'spr2.jpg'
-    - key: 'spr1.jpg'
+      - key: 'spr2.jpg'
+      - key: 'spr1.jpg'
   - name: 'Windtalkers'
     year: 2002
     classic: false
@@ -47,9 +79,13 @@ movies:
     size: 11
     description: 'saving_private_ryan'
     tagline: "The Navajo Has the Code. Protect the Code at All Costs."
+    text: |
+      The 2002 movie Windtalkers recreates the unsung story of Native American’s and how they contributed in World War II. The movie follows two Marines (Nicholas Cage as Sgt. Joe Enders and Christian Slater as Sgt. Pete Anderson) and the two Navajo “code-talkers” (Adam Beach as Pvt. Ben Yahzee and Roger Willie as Pvt. Charlie Whitehorse) of which they were assigned to. The Navajo language was nearly impossible to break and was used by the Americans to communicate and coordinate attacks. The Marines' responsibilities were to protect the code at all costs. This included killing their Navajo code talkers if he were to be captured. Nicholas Cage does have to do this in one of the scenes. Cage, at first, showed no respect to his assigned code-talker but as the movie progresses they become close friends.
+
+      The movie received mixed reviews. Criticism seems to deal mainly with political correctness. Mike Szymanski of Zap2it says “The biggest problem with Windtalkers is that the Native Americans seem almost dependent still on the white man to protect him and pull him through the movie. The tenuous friendship that ends up becoming a solid bond between Cage and Beach's characters is led by Cage's unwillingness, rather than Beach's eagerness. It seems as if there's a hesitation to allow the American Indian character to lead the charge of the story.”
     images:
-    - key: 'wt2.jpg'
-    - key: 'wt1.jpg'
+      - key: 'wt2.jpg'
+      - key: 'wt1.jpg'
   - name: 'Patton'
     year: 1970
     classic: true
@@ -58,9 +94,13 @@ movies:
     description: 'patton'
     tagline: ''
     images:
-    - key: 'patton1.jpg'
-    - key: 'patton2.jpg'
-    - key: 'patton3.jpg'
+      - key: 'patton1.jpg'
+      - key: 'patton2.jpg'
+      - key: 'patton3.jpg'
+    text: |
+      Any movie buff immediately recognizes the name George C. Scott as the actor who played General George S. Patton in the 1970 movie Patton. This movie won seven academy awards and was deemed “culturally significant” by the Library of Congress and was placed in the National Film Registry. Everyone has seen the image of the opening monologue from the movie in which Scott is standing in front of a gigantic American flag. This film discusses the story of Patton during the events of WWII beginning with his assumption of command of American forced in North Africa. Patton was such a good movie that it won eight Oscars. The movie portrays Patton as “larger-than-life, yet at the same time singularly human” according to James Berardinelli.
+
+      The movie starts during the 1943 campaign in North Africa. Before Patton’s arrival the American army was taking heavy casualties in their offensive. Patton then leads the army across the Mediterranean to Sicily and rushes to Messina ahead of his British ally Montgomery. The war office was upset that he took Messina so quickly and Patton responded classically “would you like me to give it back?” The movie depicts Patton’s famous verbal and physical abuse of a soldier suffering from shell shock because Patton thought he was a “coward”. Unlike modern films, this film follows a well known person and the events he encountered. Berardinelli adds that Patton “He was a warrior living in a time when victory in battle no longer meant the triumph it once had, a Roman conqueror who understood the meaning of the words that ‘all glory is fleeting’. Above all, however, he was an icon whom millions cheered, millions hated, and few understood.”
   - name: 'The Desert Fox'
     year: 1951
     classic: true
@@ -69,7 +109,11 @@ movies:
     description: 'the_desert_fox'
     tagline: ''
     images:
-    - key: 'tdf1.jpg'
+      - key: 'tdf1.jpg'
+    text: |
+      Like Patton the 1951 film The Desert Fox follows the steps of the famous World War Two leader Field Marshall Erwin Rommel who gained the nickname of the “Desert Fox” after his successful early campaigns in North Africa. Rommel is, without a doubt, Germany’s most famous World War II general. The movie is narrated by a Lieutenant Colonel serving under Rommel who decides to discover what happened to Rommel during the end of his life. The film Bosley Crowther wrote a review of the movie in 1951 and said “If, nine years ago, somebody had forecast this film on the Globe's screen, we would have thought the person crazy—or that the Allies were going to lose the war.”.
+
+      The movie follows Rommel leadership of the Afrika Corps during his North African campaign of 1942 and depicts his personal troubles about Hitler and his conflicts with him including the July plot to assassinate Hitler in 1944. When the tide of the war for Germany started to change in Africa Hitler ordered Rommel to fight to the last man. Rommel instead ordered a retreat and he became ill and returned to Berlin for treatment. While in the hospital Dr. Karl Strolin approached Rommel about a plot to assassinate Hitler. Rommel at first refused but later decided to go along with the plot. The bomb is planted in Hitler's bunker but fails to kill him and Rommel is warned that his involvement is known. Because of this Rommel decides to commit suicide to protect his family from the Nazi regime as a result of the failed plot.
   - name: 'The Longest Day'
     year: 1962
     classic: true
@@ -78,8 +122,10 @@ movies:
     description: 'the_longest_day'
     tagline: ''
     images:
-    - key: 'tld2.jpg'
-    - key: 'tld1.jpg'
+      - key: 'tld2.jpg'
+      - key: 'tld1.jpg'
+    text: |
+      The Longest Day is a 1962 film with a very large cast of over one hundred twenty people. The longest day depicted in the movie is that of the 6th of June 1944 and the joint-allied invasion of Normandy, France. This movie is very different from any other World War II movie in more then one way. The Longest Day portrays the events with people from both the Allied and Axis sides and takes it a step farther in that each respective character speaks the language of his country in the movie with English subtitles below. A soldier who had landed on the beaches of Normandy commented that the recreation was “very realistic” but added “Omaha Beach was nothing like this. Nothing will ever be like that, believe me.” Lawrence H. Suid comments that unlike current movies The Longest Day “portrayed real people doing real things.” Suid adds that “When army rangers and the actors climbed Painte de Hoc for the cameras, audiences knew soldiers had climbed the same cliff in front of Germans.” He argues that audiences know that actors is modern movies get paid quite a bit for their movies and “take off their costumes everyday and go to a hotel.” This movie is truly a work of art due to all that was accomplished in its production.
   - name: 'To the Shores of Tripoli'
     year: 1942
     classic: true
@@ -88,8 +134,10 @@ movies:
     description: 'tripoli'
     tagline: ''
     images:
-    - key: 'ttsot2.jpg'
-    - key: 'ttsot1.jpg'
+      - key: 'ttsot2.jpg'
+      - key: 'ttsot1.jpg'
+    text: |
+      The 1942 film To the Shores of Tripoli was first filmed in 1941 and the filming was still in progress during the attacks on Pearl Harbor in December. Because of this the producers were able adjust the film to mention it. The films intention was to sway American public opinion towards supporting the country’s involvement in World War II. The film shows no war footage, but rather portrays the conversion of a boy into to a Marine. The boy, Chris Winters, was kicked out of a military academy and forced by his father to join the Marines. Winters plans on being assigned to a desk job in Washington once his training is completed. The boy eventually becomes at odds with one of his superiors and strikes him and the superior takes the blame for the incident so he is not discharged. Winters ends up saving that same officer later during a training incident mishap. The movies intention was to praise the Marines.
   - name: 'Tora! Tora! Tora!'
     year: 1970
     classic: true
@@ -98,7 +146,9 @@ movies:
     description: 'tora_tora_tora'
     tagline: 'The incredible attack on Pearl Harbor as told from both the American and Japanese sides.'
     images:
-    - key: 'ttt1.jpg'
-    - key: 'ttt2.jpg'
-    - key: 'ttt3.jpg'
+      - key: 'ttt1.jpg'
+      - key: 'ttt2.jpg'
+      - key: 'ttt3.jpg'
+    text: |
+      Tora! Tora! Tora!, like Patton is different from other movies in that the Japanese speak their native language throughout the movie. This film is historically accurate in its presentation of the events leading up to the attack, and the attack in great detail including the blunders by both sides. Tora! Tora! Tora! greatly influenced the movie Pearl Harbor. The movie even goes as far as to show General Short and Admiral Kimmel as taking defensive measures due to the apparent threats and places more of the blame on Washington. Those two leaders were reprimanded and charged with dereliction of duty for their failed defense of the island when in fact they generally were not at fault. This movie is quite different from current films in that it was not intended to be a blockbuster and unlike Pearl Harbor it doesn’t show the efforts of only a few in Pearl Harbor’s defense. The movie cost $25 million to make and performed horribly in theatres. However the movie has picked up over the years and has been quite popular for its accurate recreation of events leading up to and during the attacks on December 7.
 
