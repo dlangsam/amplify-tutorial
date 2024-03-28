@@ -17,7 +17,6 @@ const NavBar = () => {
     document.addEventListener('scroll', navbarShrink);
 
     // Smooth scrolling to section when clicking on nav links
-    console.log("HERE");
     const smoothScroll = (target) => {
         document.querySelector(target)?.scrollIntoView({
             behavior: 'smooth'

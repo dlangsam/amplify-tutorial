@@ -11467,6 +11467,14 @@ section h3.section-subheading {
 }
 
 
+h2.js-movie-name {
+  font-size: 2.5rem !important;
+}
+@media (min-width: 601px) {
+  h2.js-movie-name {
+    font-size: 3rem !important;
+  }
+}
 
 @media (min-width: 1200px) {
   .bottom-right {
