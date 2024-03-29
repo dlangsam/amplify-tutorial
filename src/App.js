@@ -1,65 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import React, { useState, useEffect } from 'react';
-import NavBar from './components/NavBar'
-import Purpose from './components/Purpose'
-import Quote from './components/Quote'
-import MovieTimeline from './components/MovieTimeline'
-import SizeComparison from './components/SizeComparison'
-import Movies from './components/Movies'
-import Conclusion from './components/Conclusion'
-import yaml from 'js-yaml';
+import Home from './pages/Home';
+import About from './pages/About';
 
-const App = () => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-      const fetchMovies = async () => {
-          try {
-              const response = await fetch('../movies.yaml');
-              const text = await response.text();
-              const parsedData = yaml.load(text);
-              setMovies(parsedData.movies || []);
-          } catch (error) {
-              console.error('Error fetching movies:', error);
-          }
-      };
-
-      fetchMovies();
-  }, []);
-
-  return (
-    <div>  
-
-      <NavBar />
-      <header className="masthead">
-        <div className="container">
-          <div className="masthead-heading text-uppercase">The World War Movies Guide</div>
-          <Quote/>
-          <a className="btn btn-primary btn-xl text-uppercase" href="#purpose">Tell Me More</a>
-        </div>
-      </header>
-      <Purpose />
-      <MovieTimeline movies={movies} />
-      <SizeComparison movies={movies} />
-      <Movies movies={movies} />
-      <Conclusion />
-
-
-      <footer className="footer py-4">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-4 text-lg-start">Copyright &copy; Combat Aces 2024</div>
-            <div className="col-lg-4">
-              Content by Michael Kurey / Design by Devorah Langsam
-            </div>
-            <div className="col-lg-4 text-lg-end">
-              <a className="link-dark text-decoration-none me-3" href="#!">About this site</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
-
+const App = () => (
+ <Router>
+  <Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/about" element={<About />} />
+  </Routes>
+ </Router>
+);
 export default App;
+

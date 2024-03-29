@@ -11490,3 +11490,7 @@ h2.js-movie-name {
     left: 10px;
   }
 }
+
+img.img-responsive.img-circle {
+  margin: auto;
+}
